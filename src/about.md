@@ -23,6 +23,6 @@ The entire site is static and requires no database or server-side runtime.
 ## Contact
 
 You can find me on:
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Bluesky: [@yourhandle.bsky.social](https://bsky.app/profile/yourhandle.bsky.social)
-- Fediverse: @yourdomain.com@yourdomain.com
+- GitHub: [@devjj](https://github.com/devjj)
+- Bluesky: [@jsj.blue](https://bsky.app/profile/jsj.blue)
+- Fediverse: @jsj.dev@jsj.dev

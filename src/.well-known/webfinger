@@ -1,10 +1,10 @@
 {
-  "subject": "acct:yourdomain.com@yourdomain.com",
+  "subject": "acct:jsj.dev@jsj.dev",
   "links": [
     {
       "rel": "self",
       "type": "application/activity+json",
-      "href": "https://fed.brid.gy/yourdomain.com"
+      "href": "https://fed.brid.gy/jsj.dev"
     }
   ]
 }

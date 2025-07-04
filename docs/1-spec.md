@@ -2,7 +2,7 @@
 
 **Version:** 2.0
 **Date:** October 26, 2023
-**Author:** [Your Name]
+**Author:** Jose Jaramillo
 
 ## 1. Introduction & Overview
 

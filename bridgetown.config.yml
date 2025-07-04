@@ -6,7 +6,7 @@
 #   bundle exec bridgetown start
 # (NOT 'serve' - that command doesn't exist in Bridgetown 1.3.x)
 
-url: "http://localhost:4000" # Change to your domain for production
+url: "https://jsj.dev" # Production URL
 permalink: pretty
 timezone: America/New_York
 

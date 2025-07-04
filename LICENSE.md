@@ -9,7 +9,7 @@ The following license applies to all code in this repository EXCEPT for the cont
 ```
 MIT License
 
-Copyright (c) 2025 [Your Name]
+Copyright (c) 2025 Jose Jaramillo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -61,5 +61,5 @@ Under the following terms:
 
 When sharing content from this blog, please use the following format:
 ```
-"[Post Title]" by [Author Name], [URL], licensed under CC BY-NC-ND 4.0
+"[Post Title]" by Jose Jaramillo, https://jsj.dev/[post-url], licensed under CC BY-NC-ND 4.0
 ```

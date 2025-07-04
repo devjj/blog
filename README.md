@@ -113,11 +113,11 @@ A static personal website built with Bridgetown that automatically syndicates co
 1. Push to GitHub
 2. Connect repository to Netlify
 3. Set environment variables in Netlify:
-   - `BLUESKY_HANDLE`: Your Bluesky handle (e.g., `yourname.bsky.social`)
+   - `BLUESKY_HANDLE`: Your Bluesky handle (e.g., `jsj.blue`)
    - `BLUESKY_APP_PASSWORD`: Generate at https://bsky.app/settings/app-passwords
 4. Configure your domain in Netlify
-5. Update `src/.well-known/webfinger` with your actual domain
-6. Update `bridgetown.config.yml` with your production URL
+5. WebFinger is already configured for jsj.dev
+6. Production URL is already set to https://jsj.dev in bridgetown.config.yml
 7. Set up Bridgy Fed:
    - Visit https://fed.brid.gy/
    - Enter your domain
