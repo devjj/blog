@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1>{{ site.metadata.title }}</h1>
+  <p>{{ site.metadata.description }}</p>
+  
+  <section class="posts">
+    <h2>Recent Posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:10 %}
+      <li>
+        <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%B %d, %Y' }}</time>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        {% if post.summary %}
+          <p>{{ post.summary }}</p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>

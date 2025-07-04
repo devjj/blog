@@ -1,0 +1,35 @@
+[build]
+  command = "bundle install && npm install && bundle exec bridgetown build"
+  publish = "output"
+
+[build.environment]
+  RUBY_VERSION = "3.2.2"
+  NODE_VERSION = "20.9.0"
+
+[functions]
+  directory = "netlify/functions"
+
+# Headers for WebFinger support
+[[headers]]
+  for = "/.well-known/webfinger"
+  [headers.values]
+    Content-Type = "application/jrd+json"
+    Access-Control-Allow-Origin = "*"
+
+# Deploy success notification webhook
+[[plugins]]
+  package = "@netlify/plugin-webhook"
+  [plugins.inputs]
+    url = "/.netlify/functions/post_to_bluesky"
+    event = "onSuccess"
+
+# Redirect rules
+[[redirects]]
+  from = "/feed"
+  to = "/atom.xml"
+  status = 302
+
+[[redirects]]
+  from = "/rss"
+  to = "/atom.xml"
+  status = 302

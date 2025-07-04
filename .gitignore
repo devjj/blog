@@ -1,0 +1,30 @@
+# Bridgetown
+output
+.bridgetown-cache
+.bridgetown-metadata
+
+# Bundle
+.bundle
+vendor
+
+# Node
+node_modules
+.npm
+
+# Build artifacts
+*.log
+.DS_Store
+.sass-cache
+*.swp
+*~
+
+# IDE
+.vscode
+.idea
+
+# Environment variables
+.env
+.env.*
+
+# Netlify
+.netlify

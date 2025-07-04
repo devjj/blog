@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.metadata.title }}</title>
+  <link rel="alternate" type="application/atom+xml" title="{{ site.metadata.title }}" href="{{ '/atom.xml' | absolute_url }}">
+  <link rel="me" href="https://github.com/{{ site.metadata.github }}">
+  <link rel="me" href="https://bsky.app/profile/{{ site.metadata.bluesky }}">
+  {% if page.layout == 'post' %}
+  <link rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+  {% endif %}
+  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <script src="{{ '/js/index.js' | relative_url }}" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/about' | relative_url }}">About</a>
+    </nav>
+  </header>
+  
+  <main>
+    {{ content }}
+  </main>
+  
+  <footer>
+    <p>
+      &copy; {{ 'now' | date: '%Y' }} {{ site.metadata.author }}. 
+      Built with <a href="https://www.bridgetownrb.com/">Bridgetown</a>.
+    </p>
+    <p>
+      <small>
+        Code: <a href="https://opensource.org/licenses/MIT">MIT License</a> | 
+        Content: <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>
+      </small>
+    </p>
+  </footer>
+</body>
+</html>

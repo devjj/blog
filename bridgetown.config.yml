@@ -1,0 +1,39 @@
+# Welcome to Bridgetown!
+#
+# This config file is for settings that affect your whole site.
+# 
+# To start the development server, use:
+#   bundle exec bridgetown start
+# (NOT 'serve' - that command doesn't exist in Bridgetown 1.3.x)
+
+url: "http://localhost:4000" # Change to your domain for production
+permalink: pretty
+timezone: America/New_York
+
+# Where things are
+source: src
+destination: output
+collections_dir: .
+plugins_dir: plugins
+
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
+
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      syndicate_to_bluesky: true
+      syndicate_to_fediverse: true
+
+# Feed plugin configuration
+feed:
+  categories:
+    - updates
+
+# Include dot files/folders
+include:
+  - .well-known

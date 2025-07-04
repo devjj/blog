@@ -1,0 +1,10 @@
+{
+  "subject": "acct:yourdomain.com@yourdomain.com",
+  "links": [
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://fed.brid.gy/yourdomain.com"
+    }
+  ]
+}
